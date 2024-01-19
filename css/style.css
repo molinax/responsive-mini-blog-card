@@ -1,0 +1,76 @@
+:root {
+  --purple: #883AE1;
+  --dark: #20293A;
+  --gray: #6C727F;
+  --soft-pink: #E6D6FC;
+  --light-gray: #E5EAF0;
+  --semi-white: #FAFAF9;
+
+  --ff-sora: 'Sora', sans-serif;
+  --fz-base: 0.875rem;
+}
+
+body {
+  background-color: var(--semi-white);
+  font-family: var(--ff-sora);
+}
+
+.container {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  
+  padding: 1rem 0;
+  border-radius: 1rem 1rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  max-width: 336px;
+}
+
+.card__header,
+.card__content,
+.card__footer {
+  padding: 0 1rem;
+}
+
+.card__header-img {
+  margin-bottom: 1.5rem;
+  border-radius: 1rem;
+  height: 152px;
+}
+
+.card__badge {
+  border-radius: 1rem;
+  background-color: var(--soft-pink);
+  color: var(--purple);
+  font-weight: 600;
+  font-size: .75rem;
+  padding: .4rem 1rem;
+}
+
+.card__title {
+  color: var(--dark);
+  font-size: 1.2rem;
+  margin-bottom: .5rem;
+}
+
+.card__paragraph {
+  color: var(--gray);
+  font-size: var(--fz-base);
+}
+
+.card hr {
+  background-color: var(--light-gray);
+  border: none;
+  height: 1px;
+}
+
+.card__author {
+  color: var(--gray);
+  font-size: var(--fz-base);
+}
